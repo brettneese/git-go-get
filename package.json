@@ -1,0 +1,23 @@
+{
+  "name": "git-go-get",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettneese/git-get.git"
+  },
+  "author": "Brett Neese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brettneese/git-get/issues"
+  },
+  "homepage": "https://github.com/brettneese/git-get#readme",
+  "dependencies": {
+    "shelljs": "^0.7.8"
+  }
+}
