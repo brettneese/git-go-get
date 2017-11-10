@@ -5,7 +5,7 @@ This is a simple tool that allows you to run the git clone command, but create a
 `./github.com/brettneese/git-go-get`
 
 
-_Bonus:_ If you install this globally (`npm install -g git-go-get`) and add this in your `.bashrc` or `.zshrc`:
+_Bonus:_ If you install this globally (`npm install -g git-go-get`) and add something like this in your `.bashrc` or `.zshrc`:
 
 ```
 function git {
