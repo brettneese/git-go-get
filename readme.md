@@ -1,6 +1,8 @@
 # git-go-get
 
-This is a simple tool that allows you to run the git clone command, but create a directory structure similiar to Go's default structure, where repos are namespaced by their git paths. For instance, running `git-go-get` against this repo would place it at: 
+This is a simple tool that allows you to run the git clone command, but creates a directory structure similiar to Go's default structure, where repos are namespaced by their git hosts/path. 
+
+For instance, running `git-go-get` against this repo would place it at: 
 
 `./github.com/brettneese/git-go-get`
 
@@ -11,15 +13,13 @@ _Bonus:_ If you install this globally (`npm install -g git-go-get`) and add some
 function git {
   if [[ "$1" == "clone" && "$@" != *"--help"* ]]; then
     shift 1
-    git-go-get "$@" /Users/brettneese/Development
+    git-go-get "$@" /Users/$USERNAME/Development/git
   else
     command git "$@"
   fi
 }
 ```
 
-you'll be able to run `git clone` and this tool will ~automatically~ set up a proper directory structure. 
-
-That means all your `git clone`s will go to the same, well-known place on your machine, without changing any of your existing habits. Cool!
+you'll be able to run `git clone` and this tool will automagically set up a proper directory structure (ie running `git clone` against this repo wherever you are would place it at `/users/$USERNAME/Development/git/github.com/brettneese/git-go-get) That means all your `git clone`s will go to the same, well-known place on your machine, without changing any of your existing habits. Cool!
 
 N.b: Only for Unix systems, requires `git`.
