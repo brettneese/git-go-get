@@ -20,9 +20,9 @@ function git {
 }
 ```
 
-you'll be able to run `git clone` and this tool will automagically set up a proper directory structure. 
+you'll be able to run `git clone` and this tool will automagically place it in a well-known directory on your machine with a well-known structure that correspeond with the paths in git urls.
 
-For instance running `git clone https://github.com/brettneese/git-go-get.git` wherever you are at on your system would place this project at `/users/$USERNAME/Development/git/github.com/brettneese/git-go-get`. 
+For instance running, `git clone https://github.com/brettneese/git-go-get.git` wherever you are at on your system would place this project at `/users/$USERNAME/Development/git/github.com/brettneese/git-go-get`. 
 
 That means all your `git clone`s will go to the same, well-known place on your machine, without changing any of your existing habits. Cool!
 
