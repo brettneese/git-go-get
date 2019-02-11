@@ -31,4 +31,4 @@ N.b: Only for Unix systems, requires `git`.
 ## Changelog
 
 - 1.0.1: initial release
-- 1.1.0: automatically copy path to clipboard
+- 1.1.1: automatically copy path to clipboard
