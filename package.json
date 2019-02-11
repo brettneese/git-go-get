@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/brettneese/git-get#readme",
   "dependencies": {
+    "clipboardy": "^1.2.3",
     "shelljs": "^0.7.8"
   }
 }

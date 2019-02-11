@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const clipboardy = require('clipboardy');
 const spawn = require("child_process").spawn,
   shell = require("shelljs");
 
@@ -24,6 +25,8 @@ if (process.argv[3]) {
   path = parentDirectories + path;
 }
 
+clipboardy.writeSync(path);
+
 shell.mkdir("-p", path);
 
-spawn("git", ["clone", url, path], { stdio: "inherit" });
+// spawn("git", ["clone", url, path], { stdio: "inherit" });
