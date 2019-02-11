@@ -29,4 +29,4 @@ clipboardy.writeSync(path);
 
 shell.mkdir("-p", path);
 
-// spawn("git", ["clone", url, path], { stdio: "inherit" });
+spawn("git", ["clone", url, path], { stdio: "inherit" });
