@@ -27,3 +27,8 @@ For instance running, `git clone https://github.com/brettneese/git-go-get.git` w
 That means all your `git clone`s will go to the same, well-known place on your machine, without changing any of your existing habits. Cool!
 
 N.b: Only for Unix systems, requires `git`.
+
+## Changelog
+
+- 1.0.1: initial release
+- 1.1.0: automatically copy path to clipboard
