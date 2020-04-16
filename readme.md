@@ -26,7 +26,25 @@ For instance running, `git clone https://github.com/brettneese/git-go-get.git` w
 
 That means all your `git clone`s will go to the same, well-known place on your machine, without changing any of your existing habits. Cool!
 
-N.b: Only for Unix systems, requires `git`.
+_Extra Bonus_
+
+Install `clipboard-cli` globally (`npm install -g clipboard-cli`), and you can do something like this:
+
+```
+function git {
+  if [[ "$1" == "clone" && "$@" != *"--help"* ]]; then
+    shift 1
+    git-go-get "$@" /Users/$USERNAME/Development/git
+    cd `clipboard`
+  else
+    command git "$@"
+  fi
+}
+```
+
+And automagically `cd` into the newly cloned repo! Awesomesauce! It's also possible to do something similiar with your OS's CLI clipboard tooling, but this works across environments.
+
+N.b: Only for Unix systems, requires `git`. However, it will work with WSL as of 1.2.0.
 
 ## Changelog
 
