@@ -32,3 +32,4 @@ N.b: Only for Unix systems, requires `git`.
 
 - 1.0.1: initial release
 - 1.1.1: automatically copy path to clipboard
+- 1.2.0: Upgrade clipboardy for WSL support, support SSH URLs (thanks @kamori)
