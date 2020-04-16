@@ -10,11 +10,24 @@ if(!url){
     process.exit(1);
 }
 
-let path = url
+
+if (url.includes('@')){
+  // Lets say its ssh
+  var path = url
+  .split("@")
+  .slice(1)
+  .join('/')
+  .replace(':', '/')
+  .replace(".git", "");
+  
+} else {
+  // Assume its http
+  var path = url
   .split("/")
   .slice(2)
   .join("/")
   .replace(".git", "");
+}
 
 if (process.argv[3]) {
   var parentDirectories = process.argv[3];
