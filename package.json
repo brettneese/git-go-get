@@ -3,7 +3,9 @@
   "version": "1.2.0",
   "description": "",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "git-go-get": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +21,6 @@
   "homepage": "https://github.com/brettneese/git-get#readme",
   "dependencies": {
     "clipboardy": "^2.3.0",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.8.4"
   }
 }
